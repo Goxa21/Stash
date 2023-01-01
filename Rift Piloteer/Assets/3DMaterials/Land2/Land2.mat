@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1471844290405118139
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 4
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Land2
+  m_Shader: {fileID: -6465566751694194690, guid: f67de3239524372469b7e1cd8e3df163, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_709e40377a1d4c958deda66d8f75668d:
+        m_Texture: {fileID: 2800000, guid: 9f54e2155fac90c4e84223034376cba8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_11ce5d2c3c6d4897923d13dd28de9c72: -50
+    - Vector1_16abc5f980b64ec48b3ba625b75112d0: 1
+    - Vector1_19863aa85e1b4b66bbb3519e2515de90: 100
+    - Vector1_6ff2595f470d49c090ba989570da76a2: 1
+    - Vector1_71b6ba368a5f43e293c96b6620815b3b: 10
+    - Vector1_9bd57f00d8914ed88f1b58b59d0508da: 0.5
+    - Vector1_b057d4e9dc054c3c904ff3034b679996: -1
+    - Vector1_f15cc7c028a64f37b025baad97b5f02d: 1
+    m_Colors:
+    - Color_1df279a2e0cd47e1a191ee91277f6335: {r: 0, g: 0.3529415, b: 1, a: 1}
+    - Color_8ce6665a69e645ba9b1df26f477fe0de: {r: 0, g: 0.003921509, b: 1, a: 1}
+    - Color_d68f3ad696644c3b8e70986615dd48a9: {r: 1, g: 1, b: 1, a: 0.8}
+    - Vector2_d65c4584951b4df8beef84e610d97216: {r: 2, g: 2, b: 0, a: 0}
+  m_BuildTextureStacks: []
