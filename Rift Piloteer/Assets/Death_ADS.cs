@@ -7,11 +7,13 @@ public class Death_ADS : MonoBehaviour
     public int MaxDeathCounter;
     int DeathCounter;
     CoreEventManager coreEventManager;
-    public ADSManager aDSManager;
+    [SerializeField] private ADSManager aDSManager;
+    [SerializeField] private Ya_ADS_Manager NewAdsManager;
     bool CanShow;
 
     private void Start()
     {
+        NewAdsManager.ShowIntersitial();
         coreEventManager = GetComponent<CoreEventManager>();
         coreEventManager.shipDestroyed.AddListener(CheckDeath);
         coreEventManager.gameStart.AddListener(CanShowADS);
@@ -22,7 +24,8 @@ public class Death_ADS : MonoBehaviour
             DeathCounter++;
         else if(CanShow)
         {
-            aDSManager.LaunchRewardedADS();
+            //aDSManager.LaunchRewardedADS();
+            NewAdsManager.ShowRewarded();
             DeathCounter = 0;
             CanShow = false;
         }

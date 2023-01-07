@@ -1594,6 +1594,69 @@ MonoBehaviour:
   fieldName: Back
   needToFill: 1
   thisTextField: {fileID: 1268787248}
+--- !u!1 &340037715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 340037717}
+  - component: {fileID: 340037716}
+  - component: {fileID: 340037718}
+  m_Layer: 0
+  m_Name: YandexSDK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &340037716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340037715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d6361ca9a7caa0439ff6b530272b0f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInterstitialReady: 0
+  rewardedAdPlacementAsInt: 0
+  rewardedAdPlacement: 
+  secondTillNextInterstitial: 180
+  currentPlatform: 1
+--- !u!4 &340037717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340037715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &340037718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340037715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 166e10fee3d34cd4f987b9d46ba67e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progress_manager: {fileID: 367808343}
+  reward: 
 --- !u!114 &367808343 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1051545030, guid: 53db40ca52db1f9459e251cdf1912231, type: 3}
@@ -8364,7 +8427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &822079991
 Transform:
   m_ObjectHideFlags: 0
@@ -10101,7 +10164,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1099684529
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18870,7 +18933,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1934757546
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19132,6 +19195,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1252595170}
     - target: {fileID: 1051545030, guid: 53db40ca52db1f9459e251cdf1912231, type: 3}
+      propertyPath: NewAdsManager
+      value: 
+      objectReference: {fileID: 340037718}
+    - target: {fileID: 1051545030, guid: 53db40ca52db1f9459e251cdf1912231, type: 3}
       propertyPath: newRecordInfo
       value: 
       objectReference: {fileID: 622035068}
@@ -19307,6 +19374,10 @@ PrefabInstance:
       propertyPath: aDSManager
       value: 
       objectReference: {fileID: 822079992}
+    - target: {fileID: 5066560526874318314, guid: 53db40ca52db1f9459e251cdf1912231, type: 3}
+      propertyPath: NewAdsManager
+      value: 
+      objectReference: {fileID: 340037718}
     - target: {fileID: 9196500070635607467, guid: 53db40ca52db1f9459e251cdf1912231, type: 3}
       propertyPath: background
       value: 

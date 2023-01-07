@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.mrpart.yandexsdkplugin": {
+      "version": "https://github.com/MrPart256/YandexSDKWebGLUnityPlugin.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "458ea06fbaf063976051dbb334b6b6c75e80bb5b"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,

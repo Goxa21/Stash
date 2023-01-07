@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
+
 [DefaultExecutionOrder(0)]
 public class ADSManager : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsListener
 {
@@ -42,12 +43,12 @@ public class ADSManager : MonoBehaviour, IUnityAdsInitializationListener, IUnity
         Debug.Log($"Unity Ads Initialization Failed: {error.ToString()} - {message}");
     }
 
-    public void LaunchFreeADS()
+    private void LaunchFreeADS()
     {
         LaunchADS(simpleVideo);
     }
 
-    public void LaunchRewardedADS()
+    private void LaunchRewardedADS()
     {
         LaunchADS(rewardedVideo);
     }
@@ -105,7 +106,6 @@ public class ADSManager : MonoBehaviour, IUnityAdsInitializationListener, IUnity
         {
             Debug.Log("Whoops, there is no ADS available");
         }
-        
     }
 }
 

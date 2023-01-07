@@ -24,7 +24,19 @@ public class Input_Manager : MonoBehaviour
     {
         if (CanMove)
         {
-            if (CoreSettings.AccelerometerIsActive)
+
+            if (Input.GetAxis("Horizontal")!=0)
+            {
+                Horizontal = Mathf.MoveTowards(Horizontal, Input.GetAxis("Horizontal"), TransitionSpeed * Time.deltaTime);
+                VisualHorizontal = Input.GetAxis("Horizontal");
+            }
+            else
+            {
+                Horizontal = Mathf.MoveTowards(Horizontal, 0, TransitionSpeed * Time.deltaTime);
+                VisualHorizontal = 0;
+            }
+
+            /*if (CoreSettings.AccelerometerIsActive)
             {
                 //Horizontal = Input.acceleration.x * accelSensivity;
                 if (Input.acceleration.x > 0.1f || Input.acceleration.x < -0.1f)
@@ -48,7 +60,7 @@ public class Input_Manager : MonoBehaviour
                     Horizontal = Mathf.MoveTowards(Horizontal, 0, TransitionSpeed * Time.deltaTime);
                 else
                     Horizontal = Mathf.MoveTowards(Horizontal, 0, TransitionSpeed * Time.deltaTime);
-            }
+            }*/
         }
     }
     void StartMovement()

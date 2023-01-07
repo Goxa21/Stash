@@ -8,6 +8,7 @@ public class Progress_Manager : MonoBehaviour
     public Text ScoreText;
     public CoreEventManager coreEventManager;
     public ADSManager aDSManager;
+    [SerializeField] private Ya_ADS_Manager NewAdsManager;
     public Spawner SpawnController;
     public float Modificator;
     public int Score;
@@ -129,7 +130,8 @@ public class Progress_Manager : MonoBehaviour
     public void TryToDoubleReward()
     {
         aDSManager.doubleVowFlag = true;
-        aDSManager.LaunchRewardedADS();
+        NewAdsManager.ShowRewarded();
+        ///aDSManager.LaunchRewardedADS();
     }
 
     public void DoubleReward()
